@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+Host: https://premiumcashbuyers.com
+Sitemap: https://premiumcashbuyers.com/sitemap.xml

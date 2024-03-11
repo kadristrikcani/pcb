@@ -1,0 +1,5 @@
+twig:
+    default_path: '%kernel.project_dir%/templates'
+    globals:
+        uploads_directory: '/uploads'
+        project_title: '%app.project_title%'

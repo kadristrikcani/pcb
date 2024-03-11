@@ -1,0 +1,524 @@
+{% extends 'base.html.twig' %}
+
+{% set title = 'Sell My Home | Trusted Home Buyer' %}
+
+{% block body %}
+    <section class="hero-section-two gap who-we-are">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row align-items-center transparent-panel">
+                        <div class="col-lg-6">
+                            <div class="unique-solutions">
+                                <div class="comment">
+                                    <h2 class="text-white">Who We Are</h2>
+                                </div>
+                                <p class="mt-4 text-white">
+                                    Welcome to <b>Premium Cash Buyers</b>! Our team of experts specializes in providing a fast, efficient, and stress-free solution for homeowners looking to sell their property quickly.
+                                    We offer a hassle-free home selling process that saves you time, money, and effort.
+                                    Our strategy is designed to help you get the best possible outcome, providing you with a fair cash offer and handling all the details from start to finish.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="comment">
+                                <h1 class="text-white">Get Cash For Your House</h1>
+                                <div id="cashOfferForm">
+                                    {{ include('form/address.html.twig') }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about-us" class="gap" data-aos="fade-up" data-aos-delay="200" data-aos-duration="400">
+        <div class="container">
+            <div class="heading" data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">
+                <img alt="heading-shape" class="lazyload" src="https://ik.imagekit.io/premiumcashbuyers/white-placeholder.webp?updatedAt=1686638140869" data-src="https://ik.imagekit.io/premiumcashbuyers/heading-shape.svg?updatedAt=1686137142766" width="25" height="45">
+                <p>WHAT MAKES US BETTER</p>
+                <h2>ABOUT US</h2>
+            </div>
+            <div class="row">
+                <div class="col-xl-12 col-lg-4 col-md-6 col-sm-12">
+                    <p>
+                        We are a local, legitimate & professional team. We buy houses in as-is condition from any homeowner for cash, in 7-30 days depending on your timeline. $0 fee and 0% cost for our consultation.
+                        Selling your home can be a real joke, but with Premium Cash Buyers, you'll be laughing all the way to the bank.
+                        Our team of real estate experts knows the housing market inside and out, and they'll make sure you get the best deal possible for your property.
+                        Why settle for mediocre when you can have the best? Premium Cash Buyers offers a quick and easy solution for selling your home, without all the hassle of traditional methods.
+                        With us, you can say goodbye to endless showings and paperwork, and hello to a fast and fair cash offer.
+                        So, here's the punchline: contact Premium Cash Buyers today and let us turn your real estate woes into laughs and dollars.
+                        It's the joke that writes itself!
+                    </p>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="detailmobil">
+                                <h4>Features</h4>
+                                <ul class="features">
+                                    <li>$0 fee and 0% commissions.</li>
+                                    <li>We take care of all closing costs and fees associated with selling your property.</li>
+                                    <li>No need for inspection or financing contingencies.</li>
+                                    <li>No need to make any repairs; we buy houses in as-is condition.</li>
+                                    <li>No need for an appraisal.</li>
+                                    <li class="end">We are local, and we are pros.</li>
+                                </ul>
+                            </div>
+                            <div class="mt-5">
+                                <span class="lightbox-toggle sec-btn contact-us-button cursor-pointer">CONTACT US</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-4">
+                            <img alt="image" width="640" height="420" class="lazyload w-100" src="https://ik.imagekit.io/premiumcashbuyers/white-placeholder.webp?updatedAt=1686638140869" А data-src="https://ik.imagekit.io/premiumcashbuyers/features.webp?updatedAt=1686137000775">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gap no-top">
+        <div class="container">
+            <div class="heading two">
+                <h2 class="pt-0">Learn More About</h2>
+            </div>
+            <ul class="our-expertise">
+                <li><a href="{{ path('app_page', {'page': 'cash'}) }}"><i class="fa-solid fa-arrow-right-long"></i>How our non-obligated cash offer works</a></li>
+                <li><a href="{{ path('app_page', {'page': 'damaged'}) }}"><i class="fa-solid fa-arrow-right-long"></i>Damaged properties acquisition process</a></li>
+                <li><a href="{{ path('app_page', {'page': 'divorce'}) }}"><i class="fa-solid fa-arrow-right-long"></i>How we purchase properties from couples who are in divorce situation</a></li>
+                <li><a href="{{ path('app_page', {'page': 'inherited'}) }}"><i class="fa-solid fa-arrow-right-long"></i>Selling inherited properties to Premium Cash Buyers</a></li>
+                <li><a href="{{ path('app_page', {'page': 'tenant'}) }}"><i class="fa-solid fa-arrow-right-long"></i>Handling selling with tenant situations</a></li>
+                <li><a href="{{ path('app_page', {'page': 'agent'}) }}"><i class="fa-solid fa-arrow-right-long"></i>Working with Premium Cash Buyers better than sell with agent</a></li>
+            </ul>
+        </div>
+    </section>
+    <section id="how-it-works" class="gap services-three" style="background-color: #fafafa;" data-aos="fade-up" data-aos-delay="200" data-aos-duration="400">
+        <div class="container">
+            <div class="heading">
+                <img alt="heading-shape" class="lazyload" src="https://ik.imagekit.io/premiumcashbuyers/white-placeholder.webp?updatedAt=1686638140869" data-src="https://ik.imagekit.io/premiumcashbuyers/heading-shape.svg?updatedAt=1686137142766" width="25" height="45">
+                <p>A friendly and experienced</p>
+                <h2>HOW IT WORKS</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 p-0">
+                    <div class="planning-img-team">
+                        <img alt="team-img" class="lazyload w-100" src="https://ik.imagekit.io/premiumcashbuyers/white-placeholder.webp?updatedAt=1686638140869" data-src="https://ik.imagekit.io/premiumcashbuyers/contact_us.webp?updatedAt=1686137142807">
+                    </div>
+                    <div class="planning-make about-make">
+                        <i>
+                            <img class="lazyload" src="https://ik.imagekit.io/premiumcashbuyers/white-placeholder.webp?updatedAt=1686638140869" data-src="https://ik.imagekit.io/premiumcashbuyers/icons/contact_us.svg?updatedAt=1686137520220" alt="icon" width="110" height="110">
+                        </i>
+                        <div>
+                            <h3>Contact Us</h3>
+                            <p>Whether you have questions or are ready to sell your property, contacting us via email, phone, text, or web is a simple and convenient way to get in touch with us.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-0">
+                    <div class="planning-img-team">
+                        <img alt="team-img" class="lazyload w-100" src="https://ik.imagekit.io/premiumcashbuyers/white-placeholder.webp?updatedAt=1686638140869" data-src="https://ik.imagekit.io/premiumcashbuyers/get_offer.webp?updatedAt=1686137142970">
+                    </div>
+                    <div class="planning-make two about-make m-0">
+                        <i>
+                            <img class="lazyload" src="https://ik.imagekit.io/premiumcashbuyers/white-placeholder.webp?updatedAt=1686638140869" data-src="https://ik.imagekit.io/premiumcashbuyers/icons/get_offer.svg?updatedAt=1686137519932" alt="icon" width="110" height="110">
+                        </i>
+                        <div>
+                            <h3>Get a Cash Offer</h3>
+                            <p>Simply provide us with some basic information about your property, and we'll get back to you promptly with a no-obligation offer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-0">
+                    <div class="planning-img-team">
+                        <img alt="team-img" class="lazyload w-100" src="https://ik.imagekit.io/premiumcashbuyers/white-placeholder.webp?updatedAt=1686638140869" data-src="https://ik.imagekit.io/premiumcashbuyers/get-paid.webp?updatedAt=1686137143881">
+                    </div>
+                    <div class="planning-make three about-make m-0">
+                        <i>
+                            <img class="lazyload" src="https://ik.imagekit.io/premiumcashbuyers/white-placeholder.webp?updatedAt=1686638140869" data-src="https://ik.imagekit.io/premiumcashbuyers/icons/get_cash.svg?updatedAt=1686137520193" alt="icon" width="110" height="110">
+                        </i>
+                        <div>
+                            <h3>You Get Paid</h3>
+                            <p>Once the sale is complete, we pay you in full for your property in cash, with no hidden fees or closing costs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-lg-12 p-0 mt-4">
+                    <div class="clients servics-clients owl-carousel owl-theme" style="background-image: url('https://ik.imagekit.io/premiumcashbuyers/how-work-slider.webp?updatedAt=1686137142818')">
+                        <div class="we-help item">
+                            <p>Premium Cash Buyers provided an exceptional home selling experience that exceeded my expectations.
+                                Their team of professionals displayed a high level of expertise and I would highly recommend their services to anyone looking to sell their property without the traditional hassle.
+                            </p>
+                            <div class="d-flex-service">
+                                <img alt="quotation" class="lazyload" src="https://ik.imagekit.io/premiumcashbuyers/white-placeholder.webp?updatedAt=1686638140869" data-src="https://ik.imagekit.io/premiumcashbuyers/quotation-1.svg?updatedAt=1686137146347" width="60" height="60">
+                                <div>
+                                    <h4>James Davenport</h4>
+                                    <h6>Home owner in Memphis, TN</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="we-help item">
+                            <p>
+                                Selling my property with Premium Cash Buyers was the best decision I've ever made.
+                                Their team of real estate pros was extremely helpful and provided me with an outstanding service that I would definitely recommend to others.
+                                Thank you for making the process so easy and seamless!
+                            </p>
+                            <div class="d-flex-service">
+                                <img alt="quotation" class="lazyload" src="https://ik.imagekit.io/premiumcashbuyers/white-placeholder.webp?updatedAt=1686638140869" data-src="https://ik.imagekit.io/premiumcashbuyers/quotation-1.svg?updatedAt=1686137146347" width="60" height="60">
+                                <div>
+                                    <h4>Loretta Stokes</h4>
+                                    <h6>Home owner in Chattanooga, TN</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="we-help item">
+                            <p>
+                                Premium Cash Buyers made the process of selling my home an absolute breeze.
+                                Their team was reliable, efficient, and always available to answer any questions that I had.
+                                I'm thrilled with the outcome and would recommend their services to anyone looking for a hassle-free home selling experience.
+                            </p>
+                            <div class="d-flex-service">
+                                <img alt="quotation" class="lazyload" src="https://ik.imagekit.io/premiumcashbuyers/white-placeholder.webp?updatedAt=1686638140869" data-src="https://ik.imagekit.io/premiumcashbuyers/quotation-1.svg?updatedAt=1686137146347" width="60" height="60">
+                                <div>
+                                    <h4>Michael Wiles</h4>
+                                    <h6>Home owner in Brownsville, TN</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 pt-5 detailmobil">
+                    <h4 class="mb-4">We Buy Properties in Any Condition!!</h4>
+                    <p><strong>Experiencing any of these circumstances?</strong></p>
+                    <ul class="features pt-3 mb-4">
+                        <li>Are you in foreclosure or about to be?</li>
+                        <li>Do you own unwanted rental property?</li>
+                        <li>Struggling with frustrating tenants (or family members)?</li>
+                        <li>Do you own a vacant property?</li>
+                        <li>Did you inherit an unwanted property?</li>
+                        <li>Do you need to relocate quickly and sell your house fast?</li>
+                        <li>Do you want to avoid realtor commission fees?</li>
+                        <li class="end">Are you going through a divorce and need to sell?</li>
+                    </ul>
+                    <p>If you answered “yes” to one or more of these questions, we can help! We are specialists in solving real estate problems, especially ones that pose a financial burden on you.</p>
+                    <p>All of this is 100% free for you (we don’t charge you any fees). 100% no hassle. 100% no obligation. No commitment.</p>
+                </div>
+                <div class="col-lg-6 mt-4">
+                    <img alt="image" class="lazyload w-100" src="https://ik.imagekit.io/premiumcashbuyers/white-placeholder.webp?updatedAt=1686638140869" data-src="https://ik.imagekit.io/premiumcashbuyers/trash.webp?updatedAt=1686137146658" width="640" height="420">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gap services-three" data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">
+        <div class="container">
+            <div class="grid">
+                {% set k = 5 %}
+                {% for i in range(1, k) %}
+                    <div class="grid-item">
+                        <img class="lazyload" src="https://ik.imagekit.io/premiumcashbuyers/white-placeholder.webp?updatedAt=1686638140869" data-src="https://ik.imagekit.io/premiumcashbuyers/Partners/{{ i }}.webp?updatedAt=1686137173376" alt="logo"/>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <section class="gap services-three" data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">
+        <div class="container">
+            <div class="heading">
+                <img alt="heading-shape" class="lazyload" src="https://ik.imagekit.io/premiumcashbuyers/white-placeholder.webp?updatedAt=1686638140869" data-src="https://ik.imagekit.io/premiumcashbuyers/heading-shape.svg?updatedAt=1686137142766" width="25" height="45">
+                <p>We help people</p>
+                <h2>WHY WORK WITH US</h2>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-12 p-xl-0">
+                        <div class="how-we-work">
+                            <div class="planning-make">
+                                <i>
+                                    <img class="lazyload" src="https://ik.imagekit.io/premiumcashbuyers/white-placeholder.webp?updatedAt=1686638140869" data-src="https://ik.imagekit.io/premiumcashbuyers/icons/fee.svg?updatedAt=1686137520280" alt="icon" width="110" height="110">
+                                </i>
+                                <div class="mt-3">
+                                    <h3>Commissions / Fees</h3>
+                                    <p>NONE! - We are proud of offering a commission-free and fee-free home selling experience for our clients!</p>
+                                </div>
+                            </div>
+                            <div class="planning-make two">
+                                <i>
+                                    <img class="lazyload" src="https://ik.imagekit.io/premiumcashbuyers/white-placeholder.webp?updatedAt=1686638140869" data-src="https://ik.imagekit.io/premiumcashbuyers/icons/closing_cost.svg?updatedAt=1686137519685" alt="icon" width="110" height="110">
+                                </i>
+                                <div class="mt-3">
+                                    <h3>Who Pays Closing costs?</h3>
+                                    <p>Premium Cash Buyers! - We take care of all closing costs and fees associated with selling your property, ensuring a hassle-free and transparent transaction for our clients.</p>
+                                </div>
+                            </div>
+                            <div class="planning-make three">
+                                <i>
+                                    <img class="lazyload" src="https://ik.imagekit.io/premiumcashbuyers/white-placeholder.webp?updatedAt=1686638140869" data-src="https://ik.imagekit.io/premiumcashbuyers/icons/contingency.svg?updatedAt=1686137519990" alt="icon" width="110" height="110">
+                                </i>
+                                <div class="mt-3">
+                                    <h3>Inspection & Financing Contingency?</h3>
+                                    <p>NONE! - We offer a fast and reliable home selling process that does not include inspection or financing contingencies.</p>
+                                </div>
+                            </div>
+                            <div class="planning-make four">
+                                <i>
+                                    <img class="lazyload" src="https://ik.imagekit.io/premiumcashbuyers/white-placeholder.webp?updatedAt=1686638140869" data-src="https://ik.imagekit.io/premiumcashbuyers/icons/appraisal.svg?updatedAt=1686137519962" alt="icon" width="110" height="110">
+                                </i>
+                                <div class="mt-3">
+                                    <h3>Appraisal Needed?</h3>
+                                    <p>NO! - Premium Cash Buyers provides a simple and streamlined home selling process without the need for an appraisal, saving our clients time and hassle.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-12 p-xl-0">
+                        <div class="how-we-work">
+                            <div class="planning-make five">
+                                <i>
+                                    <img class="lazyload" src="https://ik.imagekit.io/premiumcashbuyers/white-placeholder.webp?updatedAt=1686638140869" data-src="https://ik.imagekit.io/premiumcashbuyers/icons/days_to_sold.svg?updatedAt=1686137519821" alt="icon" width="110" height="110">
+                                </i>
+                                <div class="mt-3">
+                                    <h3>Average Days Until Sold</h3>
+                                    <p>77-30 days - The average number of days until sold can vary from 7 to 30, depending on the owner's decision.</p>
+                                </div>
+                            </div>
+                            <div class="planning-make six">
+                                <i>
+                                    <img class="lazyload" src="https://ik.imagekit.io/premiumcashbuyers/white-placeholder.webp?updatedAt=1686638140869" data-src="https://ik.imagekit.io/premiumcashbuyers/icons/showing.svg?updatedAt=1686137524077" alt="icon" width="110" height="110">
+                                </i>
+                                <div class="mt-3">
+                                    <h3>Number of Showings</h3>
+                                    <p>One, just us! - At Premium Cash Buyers, we conduct only one showing of your property with our team of experts, offering a quick and convenient solution for selling your home.</p>
+                                </div>
+                            </div>
+                            <div class="planning-make seven">
+                                <i>
+                                    <img class="lazyload" src="https://ik.imagekit.io/premiumcashbuyers/white-placeholder.webp?updatedAt=1686638140869" data-src="https://ik.imagekit.io/premiumcashbuyers/icons/closing.svg?updatedAt=1686137520031" alt="icon" width="110" height="110">
+                                </i>
+                                <div class="mt-3">
+                                    <h3>Closing Date</h3>
+                                    <p>Your choice! - The closing date is always based on the client's decision, allowing for a flexible approach to the home selling process.</p>
+                                </div>
+                            </div>
+                            <div class="planning-make eight">
+                                <i>
+                                    <img class="lazyload" src="https://ik.imagekit.io/premiumcashbuyers/white-placeholder.webp?updatedAt=1686638140869" data-src="https://ik.imagekit.io/premiumcashbuyers/icons/repairs.svg?updatedAt=1686137523990" alt="icon" width="110" height="110">
+                                </i>
+                                <div class="mt-3">
+                                    <h3>Who Pays For Repairs?</h3>
+                                    <p>Premium Cash Buyers! - We take care of any necessary repairs or renovations to your property, ensuring a hassle-free and convenient home selling experience for our clients.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="questions" class="video-section" style="background-image: url(https://ik.imagekit.io/premiumcashbuyers/how-work-slider.webp?updatedAt=1686137142818p)" data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="video-accordion">
+                        <div class="heading">
+                            <p>FAQ</p>
+                            <h2>You have questions?</h2>
+                        </div>
+                        <div class="accordion">
+                            <div class="accordion-item active">
+                                <span class="heading">
+                                    <span class="icon"></span>
+                                    <span class="title">What types of properties does Premium Cash Buyers purchase?</span>
+                                </span>
+                                <div class="content" style="display: block;">
+                                    <p>
+                                        All types from single family, multi-family, apartments, condos, townhomes, and more.
+                                        Just Inquire! If for some reason, we are not actively purchasing properties like yours we will point you in the right direction to make sure you are well taken care of.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <span class="heading">
+                                    <span class="icon"></span>
+                                    <span class="title">What condition does the property have to be in?</span>
+                                </span>
+                                <div class="content">
+                                    <p>
+                                        Any and all conditions, Premium Cash Buyers actually prefers homes that need a lot of work! We like to use our creativity to help make homes and neighborhoods beautiful again!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <span class="heading">
+                                    <span class="icon"></span>
+                                    <span class="title">What price will Premium Cash Buyers pay?</span>
+                                </span>
+                                <div class="content">
+                                    <p>
+                                        Premium Cash Buyers offers a fair price. We believe in providing win-win situations.
+                                        Our sellers get the price they want, and we get a price that allows us to remodel the home and make a small profit to keep our business running.
+                                        If we can accomplish both of these goals, then we all win and are a perfect fit.
+                                        Remember, we never provide LOWBALL offers. To determine your offer price, we project what our After Repair Value is and then take into consideration our costs with some room for a small profit.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <span class="heading">
+                                    <span class="icon"></span>
+                                    <span class="title">Can Premium Cash Buyers help if homeowner is facing foreclosure?</span>
+                                </span>
+                                <div class="content">
+                                    <p>
+                                        Absolutely! We work efficiently and quickly! We can open escrow the day you sign our contract, and we can close escrow in as little as 7 days.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <span class="heading">
+                                    <span class="icon"></span>
+                                    <span class="title">Am I legally obliged to accept Premium Cash Buyers offer?</span>
+                                </span>
+                                <div class="content">
+                                    <p>
+                                        Never, our offer is 100% Free to review and decline or accept. No Obligation or Pressure ever!
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <span class="heading">
+                                    <span class="icon"></span>
+                                    <span class="title">Are Premium Cash Buyers real estate agents and should I pay commissions?</span>
+                                </span>
+                                <div class="content">
+                                    <p>
+                                        We have licensed real estate professionals within our company; however, in no way are we representing you.
+                                        We are simply real estate investors who help solve many real estate-related issues that most realtors do not know how to handle.
+                                        We offer a solution to help our clients get rid of burdensome properties that would otherwise be difficult to get rid of. Since we do have licensed professionals on our team, you can rest assured that we will absolutely make sure you are well taken care of, even pointing you toward a retail sale on the MLS if that is the best option for your situation.
+                                        Never any commissions when we buy your house.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <span class="heading">
+                                    <span class="icon"></span>
+                                    <span class="title">How are Premium Cash Buyers is different from a real estate agent?</span>
+                                </span>
+                                <div class="content">
+                                    <p>
+                                        Real estate agents are salespeople who work on commission. That’s not a secret. This means agents ask homeowners if they’ll hire them to find a buyer for their home.
+                                        However, Premium Cash Buyers is that home buyer.
+                                        We purchase houses directly from homeowners. We skip the entire “agent” process and jump immediately to the offer and closing on the property you’re selling.
+                                        An agent is not necessary because you have already found us! You have just saved yourself six percent commission.
+                                        That’s tens of thousands of dollars! We can buy your house so you don’t have to deal with it any longer.
+                                        We can take on the responsibility and pay for everything to make sure it is up to code, remodeled properly, and repaired correctly.
+                                        We do that after we purchase your house. You get to walk away from closing with your house sold, and we get to start a new project.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <span class="heading">
+                                    <span class="icon"></span>
+                                    <span class="title">Are there any fees or commissions to work with you?</span>
+                                </span>
+                                <div class="content">
+                                    <p>
+                                        No. You will not have to pay us any type of fees or commission to us if we buy your house.
+                                        We work hard to make the house selling process easier for the homeowner.
+                                        We understand that having to sell a house can be a very stressful process.
+                                        So, we try to make it easier and smoother. For that reason, we pay the closing costs too.
+                                        Working with us will not cost you any money out of pocket, as we will pay for everything.
+                                        That means you get to keep more of your own cash in your own pocket. Saving money is always a good feeling.
+                                        We try to make your house selling experience go smooth. No hassles. No fees. No surprises.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <span class="heading">
+                                    <span class="icon"></span>
+                                    <span class="title">How fast can you buy my house?</span>
+                                </span>
+                                <div class="content">
+                                    <p>
+                                        We can buy your house as fast as seven days or on a date that works best for you.
+                                        We can accommodate any timeline. Close in a week, 30 days, 60 days, or whenever you need.
+                                        If you need to stay after the house closes to help with the transition, we can make that work!
+                                        We’ll make the process simple and painless so you can move on stress-free.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <span class="heading">
+                                    <span class="icon"></span>
+                                    <span class="title">What happens next if we accept your offer?</span>
+                                </span>
+                                <div class="content">
+                                    <p>
+                                        We will open escrow immediately. Escrow will then provide you with escrow and title paperwork to complete.
+                                        Once all parties have all the necessary completed paperwork, we will wire the closing funds.
+                                        It only takes us one day to wire the closing funds to escrow. Once escrow receives the closing funds, title records the sale.
+                                        After title records the sale, escrow will wire your closing proceeds to your bank account, or you can pick up your check at escrow.
+                                        After you confirm the money is in your bank account, we meet you to get the keys. Cash in your hands, property off your hands.
+                                        It’s really that simple!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">
+                    <div class="heading two">
+                        <p class="m-2 mb-4">MEET OUR PROFESSIONALS</p>
+                    </div>
+                    <div id="contactForm">
+                        {{ include('form/contact_address.html.twig') }}
+                    </div>
+                </div>
+                <div class="offset-xl-1 col-lg-5" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
+                    <div class="what-we-provide address">
+                        <i>
+                            <img class="lazyload" src="https://ik.imagekit.io/premiumcashbuyers/white-placeholder.webp?updatedAt=1686638140869" data-src="https://ik.imagekit.io/premiumcashbuyers/icons/mail.svg?updatedAt=1686137523633" alt="icon" width="40" height="40">
+                        </i>
+                        <div>
+                            <h4 class="pb-2">Email Address</h4>
+                            <h2><a href="mailto:info@premiumcashbuyers.com">Send an email</a></h2>
+                        </div>
+                    </div>
+                    <div class="what-we-provide address">
+                        <i>
+                            <img class="lazyload" src="https://ik.imagekit.io/premiumcashbuyers/white-placeholder.webp?updatedAt=1686638140869" data-src="https://ik.imagekit.io/premiumcashbuyers/icons/phone.svg?updatedAt=1686137523743" alt="icon" width="40" height="40">
+                        </i>
+                        <div>
+                            <h4 class="pb-2">Phone No</h4>
+                            <h2><a href="callto:+19019100101">(901) 910-0101</a></h2>
+                            <h5>24/7 Support team</h5>
+                        </div>
+                    </div>
+                    <div class="what-we-provide end address">
+                        <i>
+                            <img class="lazyload" src="https://ik.imagekit.io/premiumcashbuyers/white-placeholder.webp?updatedAt=1686638140869" data-src="https://ik.imagekit.io/premiumcashbuyers/icons/hours.svg?updatedAt=1686137520099" alt="icon" width="40" height="40">
+                        </i>
+                        <div>
+                            <h4 class="pb-2">Working Hours</h4>
+                            <h2>We are open 24/7!</h2>
+                            <h5>Monday - Sunday</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

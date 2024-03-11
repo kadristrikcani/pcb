@@ -1,0 +1,91 @@
+{% htmlcompress %}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}{{ title }} — {{ project_title }}!{% endblock %}</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/android-chrome-192x192.png">
+        <link rel="icon" type="image/png" sizes="256x256" href="/assets/favicon/android-chrome-256x256.png">
+        <link rel="manifest" href="/assets/favicon/site.webmanifest">
+        <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="description" content="Premium Cash Buyers: Fast, reliable, and fair. We buy houses in any condition for cash. Enjoy a hassle-free selling process with no fees or commissions. Contact us today!"/>
+        <meta property="og:image:alt" content="Premium Cash Buyers"/>
+        <meta property="og:locale" content="en_US"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Premium Cash Buyers - We Buy Houses for Cash Fast"/>
+        <meta property="og:description" content="Premium Cash Buyers: Fast, reliable, and fair. We buy houses in any condition for cash. Enjoy a hassle-free selling process with no fees or commissions. Contact us today!"/>
+        <meta property="og:url" content="https://premiumcashbuyers.com/"/>
+        <meta property="og:site_name" content="Premium Cash Buyers"/>
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+        {% if app.environment != 'dev' %}
+            <!-- Google tag (gtag.js) -->
+            <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-49BHF854ET"></script>
+            <script defer>
+                window.dataLayer = window.dataLayer || [];
+
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+
+                gtag('js', new Date());
+                gtag('config', 'G-49BHF854ET');
+            </script>
+            <!-- Google Tag Manager -->
+            <script defer>(function (w, d, s, l, i) {
+                    w[l] = w[l] || [];
+                    w[l].push({
+                        'gtm.start':
+                            new Date().getTime(), event: 'gtm.js'
+                    });
+                    var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+                    j.async = true;
+                    j.src =
+                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                    f.parentNode.insertBefore(j, f);
+                })(window, document, 'script', 'dataLayer', 'GTM-TSQXHSR');</script>
+            <!-- End Google Tag Manager -->
+            <!-- Bing tag-->
+            <script>
+                (function (w, d, t, r, u) {
+                    var f, n, i;
+                    w[u] = w[u] || [], f = function () {
+                        var o = {ti: "97044492", enableAutoSpaTracking: true};
+                        o.q = w[u], w[u] = new UET(o), w[u].push("pageLoad")
+                    },
+                        n = d.createElement(t), n.src = r, n.async = 1, n.onload = n.onreadystatechange = function () {
+                        var s = this.readyState;
+                        s && s !== "loaded" && s !== "complete" || (f(), n.onload = n.onreadystatechange = null)
+                    },
+                        i = d.getElementsByTagName(t)[0], i.parentNode.insertBefore(n, i)
+                })
+                (window, document, "script", "//bat.bing.com/bat.js", "uetq");
+            </script>
+            <!-- End Google Tag Manager -->
+        {% endif %}
+    </head>
+    <body class="menu-layer">
+    {% if app.environment != 'dev' %}
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSQXHSR" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+    {% endif %}
+    {{ include('partials/header.html.twig') }}
+    {% block body %}{% endblock %}
+    {{ include('partials/footer.html.twig') }}
+    <span id="scroll" style="display: none;"><span></span></span>
+    {% block javascripts %}
+        {{ encore_entry_script_tags('app') }}
+    {% endblock %}
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8FOJ_sTRSx-sO9IQZlsXZkdntxGt6piE&libraries=places"></script>
+    </body>
+    </html>
+{% endhtmlcompress %}

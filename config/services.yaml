@@ -1,0 +1,27 @@
+parameters:
+    container.dumper.inline_factories: true
+    locale: 'en'
+    app.project_title: 'Premium Cash Buyers'
+    app.admin_email: 'urmuz.tagizade@gmail.com'
+    uploads_directory: '%kernel.project_dir%/public/uploads'
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+    App\:
+        resource: '../src/'
+        exclude:
+            - '../src/DependencyInjection/'
+            - '../src/Entity/'
+            - '../src/Kernel.php'
+    App\EventListener\ErrorToHomepageListener:
+        tags:
+            - { name: kernel.event_listener, event: kernel.exception }
+    voku\helper\HtmlMin:
+        tags:
+            - { name: HtmlMin }
+    voku\twig\MinifyHtmlExtension:
+        arguments:
+            $forceCompression: false
+        tags:
+            - { name: twig.extension }

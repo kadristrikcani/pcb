@@ -1,0 +1,245 @@
+.hero-section-two:before {
+    display: none !important;
+}
+
+.navbar-links li > a {
+    font-size: 16px !important;
+}
+
+.services-three .services-style-one {
+    min-height: 480px !important;
+}
+
+footer {
+    background: linear-gradient(90deg, black 0%, black 100%);
+    padding: 20px;
+}
+
+footer p {
+    color: white !important;
+}
+
+.navbar-links li > a {
+    font-size: 15px !important;
+}
+
+.planning-img-team, .planning-make.about-make {
+    min-height: 310px !important;
+}
+
+.planning-make.about-make {
+    border: 1px solid #D0D0D0 !important;
+}
+
+.planning-img-team img {
+    height: 310px !important;
+}
+
+.who-we-are {
+    background-image: linear-gradient(180deg, rgba(4, 5, 46, 0.40) 100%, rgba(255, 255, 255, 0) 100%), url(https://ik.imagekit.io/premiumcashbuyers/who-we-are.webp?updatedAt=1686137852522) !important;
+}
+
+.who-we-are .transparent-panel {
+    /*background: hsla(0, 0%, 100%, .35);*/
+    /*filter: drop-shadow(0 7px 60px rgba(64, 115, 192, .15));*/
+    margin-bottom: 27px;
+    padding: 23px 17px 21px 29px;
+    border-radius: 30px;
+}
+
+.planning-make i {
+    width: 122px !important;
+    height: 122px !important;
+}
+
+.captcha-group img {
+    margin-top: 20px;
+    margin-left: 5px;
+    border-radius: 42px;
+}
+
+form.content-form img {
+    margin-bottom: 20px;
+    margin-left: 5px;
+    border-radius: 42px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.grid-item {
+    width: 200px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    animation: bounce-animation 1s ease-in-out alternate both infinite;
+}
+
+.grid-item:nth-child(2n) {
+    animation-duration: 1.2s;
+}
+
+.grid-item:nth-child(3n) {
+    animation-duration: 1.4s;
+}
+
+.grid-item:nth-child(4n) {
+    animation-duration: 1.6s;
+}
+
+.grid-item:nth-child(5n) {
+    animation-duration: 1.8s;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@keyframes bounce-animation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@media (max-width: 767px) {
+    .grid {
+        justify-content: center;
+    }
+
+    .grid-item {
+        width: 30%;
+    }
+}
+
+form.leave input {
+    padding-right: 25px !important;
+}
+
+.cursor-pointer {
+    cursor: pointer !important;
+}
+
+/*  Tab */
+.tab-pane {
+    display: none;
+}
+
+.tab-pane:first-child {
+    display: block;
+}
+
+/* Error */
+span.error {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    padding: 10px 10px 0;
+    color: white;
+}
+
+.contact-form span.error, .address-contact-form span.error {
+    color: red !important;
+}
+
+/* Стили для индикатора загрузки */
+.ajax-loader {
+    display: none;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+    position: relative;
+    left: 30px !important;
+    margin-top: 30px !important;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.design-agency .what-we-provide span a {
+    color: #1566AD !important;
+    font-weight: 800 !important;
+}
+
+.design-agency .what-we-provide h2 {
+    width: 200px !important;
+    border-bottom: 3px solid #1870BD;
+}
+
+.design-agency .what-we-provide p {
+    margin-top: 10px;
+}
+
+
+.design-agency .what-we-provide span a:hover {
+    color: #0d6efd !important;
+}
+
+.page-content a {
+    border: none !important;
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    margin-right: 0 !important;
+}
+
+.page-content a:hover {
+    color: #1870BD;
+}
+
+.client-help p {
+    font-size: inherit !important;
+    line-height: 35px !important;
+}
+
+.detailmobil .comment ul li img {
+    width: 30%;
+    left: -3% !important;
+}
+
+@media (max-width: 768px) {
+    .detailmobil .comment ul li img {
+        width: 100%;
+        left: 0 !important; /* Reset the left property if needed */
+    }
+
+    .detailmobil h4 {
+        border-bottom: 0 !important;
+    }
+
+    .comment-data p {
+        border-top: 3px solid #1870bd;
+        margin-top: 10px;
+    }
+
+}
+
+.address-contact-wizard .progress-bar, .contact-form-wizard .progress-bar {
+    color: #555 !important;
+}
+
+.address-contact-wizard .our-skills .progress-bar--1, .contact-form-wizard .our-skills .progress-bar--1 {
+    background-color: #999 !important;
+}
+
+.address-contact-wizard .our-skills .progress-bar__value--1.js-animated, .contact-form-wizard .our-skills .progress-bar__value--1.js-animated {
+    color: #555 !important;
+}

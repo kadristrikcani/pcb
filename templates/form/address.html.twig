@@ -1,0 +1,22 @@
+{% block javascripts %}
+    {{ encore_entry_script_tags('app') }}
+{% endblock %}
+
+{% block body %}
+    {{ form_start(address_form, {'attr': {'class': 'address-wizard leave address-form'}}) }}
+    <div class="tab-content">
+        <div class="tab-pane" id="step1">
+            <div class="col-lg-4 col-md-6 pe-5" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
+                <div class="our-skills">
+                    <div class="progress-bar" data-effect="1" data-value="50" data-skill="Step 1"></div>
+                </div>
+            </div>
+            {{ form_widget(address_form.address,{'attr': {'class': 'place-autocomplete-form'}}) }}
+            {{ form_widget(address_form.name) }}
+            {{ form_widget(address_form.phone,{'attr': {'class': 'phone-mask'}}) }}
+            <button class="submit-btn sec-btn mt-3 mb-lg-0 mb-5" type="submit">Next</button>
+        </div>
+    </div>
+    {{ form_end(address_form) }}
+    {{ include('form/flush_messages.html.twig') }}
+{% endblock %}
